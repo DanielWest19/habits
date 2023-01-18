@@ -1,5 +1,29 @@
-body{
-  background: #09090A;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #09090a;
 
   height: 100vh;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+
+  width: 216px;
+  height: 52px;
+
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #8b5cf6;
+  background: transparent;
+  color: white;
 }
