@@ -6,6 +6,7 @@
 
 body {
   background: #09090a;
+  color: white;
 
   height: 100vh;
 }
@@ -15,7 +16,7 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  padding: 48;
+  padding: 48px;
 }
 
 button {
@@ -23,7 +24,7 @@ button {
   border-radius: 8px;
   border: 1px solid #8b5cf6;
   background: transparent;
-  color: white;
+  color: #ffffff;
 
   display: flex;
   align-items: center;
@@ -35,9 +36,58 @@ button {
   line-height: 125%;
 }
 
+form {
+  display: flex;
+  margin-left: 32px;
+
+  padding: 0 48px;
+}
+
+.habits {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.habit {
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.days {
+  display: flex;
+  gap: 48px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  margin-bottom: 8px;
+
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+
+  color: #a1a1aa;
+
+  text-align: center;
+}
+
 input {
   appearance: none;
-  -webkir-appearance: none;
+  -webkit-appearance: none;
 
   width: 64px;
   height: 64px;
@@ -48,9 +98,11 @@ input {
   background: #18181b;
 }
 
-/*                       Pseudo-selector                                                        */
+/*                       Esse é um tipo de Pseudo-selector                                          */
 
 input:checked {
-  background: #8b5cf6;
   border: 2px solid #a78bfa;
+  border-radius: 8px;
+
+  background: #8b5cf6;
 }
