@@ -34,3 +34,18 @@ button {
   font-size: 16px;
   line-height: 125%;
 }
+
+input {
+  appearance: none;
+  -webkir-appearance: none;
+
+  width: 64px;
+  height: 64px;
+  background: #8b5cf6;
+  border: 2px solid #a78bfa;
+  border-radius: 8px;
+
+  background: #18181b;
+}
+
+
