@@ -41,11 +41,16 @@ input {
 
   width: 64px;
   height: 64px;
-  background: #8b5cf6;
-  border: 2px solid #a78bfa;
+
+  border: 2px solid #27272a;
   border-radius: 8px;
 
   background: #18181b;
 }
 
+/*                       Pseudo-selector                                                        */
 
+input:checked {
+  background: #8b5cf6;
+  border: 2px solid #a78bfa;
+}
