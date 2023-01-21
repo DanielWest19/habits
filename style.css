@@ -17,6 +17,10 @@ header {
   justify-content: space-between;
 
   padding: 48px;
+
+  position: fixed;
+  width: 100%;
+  background-color: #09090a;
 }
 
 button {
@@ -24,7 +28,7 @@ button {
   border-radius: 8px;
   border: 1px solid #8b5cf6;
   background: transparent;
-  color: #ffffff;
+  color: white;
 
   display: flex;
   align-items: center;
@@ -36,11 +40,11 @@ button {
   line-height: 125%;
 }
 
-form {
+#form-habits {
   display: flex;
-  margin-left: 32px;
 
-  padding: 0 48px;
+  padding: 182px 48px 48px;
+  width: fit-content;
 }
 
 .habits {
@@ -65,6 +69,7 @@ form {
 .days {
   display: flex;
   gap: 48px;
+  margin-left: 32px;
 }
 
 .day {
@@ -101,8 +106,14 @@ input {
 /*                       Esse é um tipo de Pseudo-selector                                          */
 
 input:checked {
-  border: 2px solid #a78bfa;
-  border-radius: 8px;
-
   background: #8b5cf6;
+  border: 2px solid #a78bfa;
+}
+
+/*                                                                                                   */
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
 }
